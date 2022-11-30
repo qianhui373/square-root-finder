@@ -1,0 +1,385 @@
+Analysis & Synthesis report for project3Top
+Wed Nov 30 15:33:44 2022
+Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |project3Top|keypressed:U2|key_state
+  9. State Machine - |project3Top|keypressed:U1|key_state
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |project3Top
+ 12. Parameter Settings for User Entity Instance: keypressed:U1
+ 13. Parameter Settings for User Entity Instance: keypressed:U2
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Nov 30 15:33:44 2022       ;
+; Quartus Prime Version           ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
+; Revision Name                   ; project3Top                                 ;
+; Top-level Entity Name           ; project3Top                                 ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 55                                          ;
+; Total pins                      ; 66                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; project3Top        ; project3Top        ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                      ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
+; SW2dec.v                         ; yes             ; User Verilog HDL File  ; C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/SW2dec.v           ;         ;
+; seven_seg_driver.v               ; yes             ; User Verilog HDL File  ; C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/seven_seg_driver.v ;         ;
+; keypressed.v                     ; yes             ; User Verilog HDL File  ; C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/keypressed.v       ;         ;
+; project3Top.v                    ; yes             ; User Verilog HDL File  ; C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/project3Top.v      ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 55             ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 102            ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 4              ;
+;     -- 5 input functions                    ; 2              ;
+;     -- 4 input functions                    ; 62             ;
+;     -- <=3 input functions                  ; 34             ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 55             ;
+;                                             ;                ;
+; I/O pins                                    ; 66             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 55             ;
+; Total fan-out                               ; 701            ;
+; Average fan-out                             ; 2.43           ;
++---------------------------------------------+----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name      ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+------------------+--------------+
+; |project3Top               ; 102 (35)            ; 55 (49)                   ; 0                 ; 0          ; 66   ; 0            ; |project3Top                     ; project3Top      ; work         ;
+;    |SW2dec:F1|             ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|SW2dec:F1           ; SW2dec           ; work         ;
+;    |keypressed:U1|         ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|keypressed:U1       ; keypressed       ; work         ;
+;    |keypressed:U2|         ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|keypressed:U2       ; keypressed       ; work         ;
+;    |seven_seg_driver:S0|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|seven_seg_driver:S0 ; seven_seg_driver ; work         ;
+;    |seven_seg_driver:S1|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|seven_seg_driver:S1 ; seven_seg_driver ; work         ;
+;    |seven_seg_driver:S2|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|seven_seg_driver:S2 ; seven_seg_driver ; work         ;
+;    |seven_seg_driver:S3|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|seven_seg_driver:S3 ; seven_seg_driver ; work         ;
+;    |seven_seg_driver:S4|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|seven_seg_driver:S4 ; seven_seg_driver ; work         ;
+;    |seven_seg_driver:S5|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|seven_seg_driver:S5 ; seven_seg_driver ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------+
+; State Machine - |project3Top|keypressed:U2|key_state                                         ;
++------------------------+--------------------+------------------------+-----------------------+
+; Name                   ; key_state.KEY_FREE ; key_state.KEY_RELEASED ; key_state.KEY_PRESSED ;
++------------------------+--------------------+------------------------+-----------------------+
+; key_state.KEY_FREE     ; 0                  ; 0                      ; 0                     ;
+; key_state.KEY_PRESSED  ; 1                  ; 0                      ; 1                     ;
+; key_state.KEY_RELEASED ; 1                  ; 1                      ; 0                     ;
++------------------------+--------------------+------------------------+-----------------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------+
+; State Machine - |project3Top|keypressed:U1|key_state                                         ;
++------------------------+--------------------+------------------------+-----------------------+
+; Name                   ; key_state.KEY_FREE ; key_state.KEY_RELEASED ; key_state.KEY_PRESSED ;
++------------------------+--------------------+------------------------+-----------------------+
+; key_state.KEY_FREE     ; 0                  ; 0                      ; 0                     ;
+; key_state.KEY_PRESSED  ; 1                  ; 0                      ; 1                     ;
+; key_state.KEY_RELEASED ; 1                  ; 1                      ; 0                     ;
++------------------------+--------------------+------------------------+-----------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 55    ;
+; Number of registers using Synchronous Clear  ; 15    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 31    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 48    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |project3Top ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; get_num        ; 0     ; Unsigned Binary                                    ;
+; get_root       ; 1     ; Unsigned Binary                                    ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: keypressed:U1 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; KEY_FREE       ; 00    ; Unsigned Binary                   ;
+; KEY_PRESSED    ; 01    ; Unsigned Binary                   ;
+; KEY_RELEASED   ; 10    ; Unsigned Binary                   ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: keypressed:U2 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; KEY_FREE       ; 00    ; Unsigned Binary                   ;
+; KEY_PRESSED    ; 01    ; Unsigned Binary                   ;
+; KEY_RELEASED   ; 10    ; Unsigned Binary                   ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 55                          ;
+;     CLR               ; 7                           ;
+;     ENA               ; 9                           ;
+;     ENA CLR           ; 24                          ;
+;     ENA SCLR          ; 15                          ;
+; arriav_lcell_comb     ; 111                         ;
+;     normal            ; 111                         ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 29                          ;
+;         4 data inputs ; 62                          ;
+;         5 data inputs ; 2                           ;
+;         6 data inputs ; 4                           ;
+; boundary_port         ; 66                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.76                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+    Info: Processing started: Wed Nov 30 15:33:32 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project3Top -c project3Top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file tb_project3.v
+    Info (12023): Found entity 1: tb_project3 File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/tb_project3.v Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file sw2dec.v
+    Info (12023): Found entity 1: SW2dec File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/SW2dec.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file seven_seg_driver.v
+    Info (12023): Found entity 1: seven_seg_driver File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/seven_seg_driver.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file keypressed.v
+    Info (12023): Found entity 1: keypressed File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/keypressed.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file project3top.v
+    Info (12023): Found entity 1: project3Top File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/project3Top.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file run.v
+    Info (12023): Found entity 1: run File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/run.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file newton.v
+    Info (12023): Found entity 1: newton File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/newton.v Line: 3
+Critical Warning (10226): Verilog HDL Port Declaration warning at run.v(8): port declaration for "initValue" declares packed dimensions but the data type declaration does not File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/run.v Line: 8
+Info (10499): HDL info at run.v(7): see declaration for object "initValue" File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/run.v Line: 7
+Info (12127): Elaborating entity "project3Top" for the top level hierarchy
+Info (12128): Elaborating entity "SW2dec" for hierarchy "SW2dec:F1" File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/project3Top.v Line: 24
+Warning (10230): Verilog HDL assignment warning at SW2dec.v(23): truncated value with size 32 to match size of target (10) File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/SW2dec.v Line: 23
+Info (12128): Elaborating entity "seven_seg_driver" for hierarchy "seven_seg_driver:S0" File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/project3Top.v Line: 34
+Info (12128): Elaborating entity "keypressed" for hierarchy "keypressed:U1" File: C:/Users/qianh/OneDrive/Documents/lab5/project3Top_zx_restored/project3Top.v Line: 44
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 198 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 132 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Wed Nov 30 15:33:44 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
+
+
