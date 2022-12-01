@@ -4,8 +4,8 @@ module run(valIn, initValue);
    input [19:0] valIn;
    
    reg [19:0] zone;
-   output [16:0]initValue;
-   reg initValue;
+   output [19:0]initValue;
+   reg [19:0]initValue;
    //wire [18:0] num;
    integer n;
    

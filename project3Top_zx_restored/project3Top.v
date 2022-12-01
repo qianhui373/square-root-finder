@@ -24,8 +24,8 @@ module project3Top(CLOCK_50, SW, KEY, LED, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 			   .leds(LED));
 	
 	// square root finder
-	// sqrt_finder F2 (input_num_dec, sqrt_dec);
-	assign sqrt_dec = 24'h123456;
+	newton F2 (input_num_dec, sqrt_dec);
+	
 	
 	
 	assign reset = KEY[1];

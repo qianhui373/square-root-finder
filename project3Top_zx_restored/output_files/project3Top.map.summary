@@ -1,5 +1,5 @@
-Analysis & Synthesis Status : Successful - Wed Nov 30 15:33:44 2022
-Quartus Prime Version : 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Thu Dec 01 00:54:18 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : project3Top
 Top-level Entity Name : project3Top
 Family : Cyclone V
@@ -8,7 +8,7 @@ Total registers : 55
 Total pins : 66
 Total virtual pins : 0
 Total block memory bits : 0
-Total DSP Blocks : 0
+Total DSP Blocks : 4
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
