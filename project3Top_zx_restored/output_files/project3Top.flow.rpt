@@ -1,5 +1,5 @@
 Flow report for project3Top
-Thu Dec 01 00:55:41 2022
+Thu Dec 01 23:41:44 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,19 +40,19 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Dec 01 00:55:41 2022       ;
+; Flow Status                     ; Successful - Thu Dec 01 23:41:44 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; project3Top                                 ;
 ; Top-level Entity Name           ; project3Top                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 535 / 32,070 ( 2 % )                        ;
-; Total registers                 ; 56                                          ;
+; Logic utilization (in ALMs)     ; 1,403 / 32,070 ( 4 % )                      ;
+; Total registers                 ; 55                                          ;
 ; Total pins                      ; 66 / 457 ( 14 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
-; Total DSP Blocks                ; 4 / 87 ( 5 % )                              ;
+; Total DSP Blocks                ; 7 / 87 ( 8 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/01/2022 00:54:09 ;
+; Start date & time ; 12/01/2022 23:39:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; project3Top         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 91770060964.166987404935672            ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 91768681166.166995597830848            ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_ bit_corrupter                 ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -108,12 +108,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4901 MB             ; 00:00:18                           ;
-; Fitter               ; 00:01:05     ; 1.1                     ; 7928 MB             ; 00:06:07                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4838 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.9                     ; 5295 MB             ; 00:00:07                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4725 MB             ; 00:00:01                           ;
-; Total                ; 00:01:28     ; --                      ; --                  ; 00:06:38                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4945 MB             ; 00:00:21                           ;
+; Fitter               ; 00:01:38     ; 1.2                     ; 7878 MB             ; 00:08:55                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4847 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:07     ; 3.2                     ; 5320 MB             ; 00:00:15                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4741 MB             ; 00:00:01                           ;
+; Total                ; 00:02:04     ; --                      ; --                  ; 00:09:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

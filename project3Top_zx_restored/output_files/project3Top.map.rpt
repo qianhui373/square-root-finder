@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project3Top
-Thu Dec 01 00:54:18 2022
+Thu Dec 01 23:39:49 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -24,9 +24,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  16. Parameter Settings for Inferred Entity Instance: newton:F2|lpm_divide:Div3
  17. Parameter Settings for Inferred Entity Instance: newton:F2|lpm_divide:Div2
  18. Parameter Settings for Inferred Entity Instance: newton:F2|lpm_divide:Div1
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+ 19. Parameter Settings for Inferred Entity Instance: newton:F2|lpm_divide:Div0
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -52,7 +53,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Dec 01 00:54:18 2022       ;
+; Analysis & Synthesis Status     ; Successful - Thu Dec 01 23:39:49 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; project3Top                                 ;
 ; Top-level Entity Name           ; project3Top                                 ;
@@ -62,7 +63,7 @@ refer to the applicable agreement for further details.
 ; Total pins                      ; 66                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 4                                           ;
+; Total DSP Blocks                ; 7                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -178,7 +179,8 @@ refer to the applicable agreement for further details.
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
-;     Processors 8-16        ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -196,18 +198,21 @@ refer to the applicable agreement for further details.
 ; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                                       ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                   ;         ;
 ; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                        ;         ;
-; db/lpm_divide_fbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_fbm.tdf      ;         ;
-; db/sign_div_unsign_llh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_llh.tdf ;         ;
-; db/alt_u_div_gve.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_gve.tdf       ;         ;
-; db/lpm_divide_ibm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_ibm.tdf      ;         ;
-; db/sign_div_unsign_olh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_olh.tdf ;         ;
-; db/alt_u_div_mve.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_mve.tdf       ;         ;
-; db/lpm_divide_scm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_scm.tdf      ;         ;
-; db/sign_div_unsign_2nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_2nh.tdf ;         ;
-; db/alt_u_div_a2f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_a2f.tdf       ;         ;
-; db/lpm_divide_0dm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_0dm.tdf      ;         ;
-; db/sign_div_unsign_6nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_6nh.tdf ;         ;
-; db/alt_u_div_i2f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_i2f.tdf       ;         ;
+; db/lpm_divide_jbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_jbm.tdf      ;         ;
+; db/sign_div_unsign_plh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_plh.tdf ;         ;
+; db/alt_u_div_nve.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_nve.tdf       ;         ;
+; db/lpm_divide_lbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_lbm.tdf      ;         ;
+; db/sign_div_unsign_rlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_rlh.tdf ;         ;
+; db/alt_u_div_sve.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_sve.tdf       ;         ;
+; db/lpm_divide_vcm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_vcm.tdf      ;         ;
+; db/sign_div_unsign_5nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_5nh.tdf ;         ;
+; db/alt_u_div_g2f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_g2f.tdf       ;         ;
+; db/lpm_divide_4dm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_4dm.tdf      ;         ;
+; db/sign_div_unsign_anh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_anh.tdf ;         ;
+; db/alt_u_div_p2f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_p2f.tdf       ;         ;
+; db/lpm_divide_6dm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_6dm.tdf      ;         ;
+; db/sign_div_unsign_cnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_cnh.tdf ;         ;
+; db/alt_u_div_u2f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_u2f.tdf       ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -216,25 +221,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 534                  ;
+; Estimate of Logic utilization (ALMs needed) ; 1394                 ;
 ;                                             ;                      ;
-; Combinational ALUT usage for logic          ; 1062                 ;
+; Combinational ALUT usage for logic          ; 2782                 ;
 ;     -- 7 input functions                    ; 0                    ;
 ;     -- 6 input functions                    ; 4                    ;
-;     -- 5 input functions                    ; 4                    ;
-;     -- 4 input functions                    ; 229                  ;
-;     -- <=3 input functions                  ; 825                  ;
+;     -- 5 input functions                    ; 33                   ;
+;     -- 4 input functions                    ; 679                  ;
+;     -- <=3 input functions                  ; 2066                 ;
 ;                                             ;                      ;
 ; Dedicated logic registers                   ; 55                   ;
 ;                                             ;                      ;
 ; I/O pins                                    ; 66                   ;
 ;                                             ;                      ;
-; Total DSP Blocks                            ; 4                    ;
+; Total DSP Blocks                            ; 7                    ;
 ;                                             ;                      ;
 ; Maximum fan-out node                        ; newton:F2|out_dec[0] ;
-; Maximum fan-out                             ; 60                   ;
-; Total fan-out                               ; 3497                 ;
-; Average fan-out                             ; 2.79                 ;
+; Maximum fan-out                             ; 96                   ;
+; Total fan-out                               ; 9115                 ;
+; Average fan-out                             ; 3.06                 ;
 +---------------------------------------------+----------------------+
 
 
@@ -243,27 +248,31 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                    ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |project3Top                              ; 1062 (30)           ; 55 (49)                   ; 0                 ; 4          ; 66   ; 0            ; |project3Top                                                                                                           ; project3Top         ; work         ;
+; |project3Top                              ; 2782 (26)           ; 55 (49)                   ; 0                 ; 7          ; 66   ; 0            ; |project3Top                                                                                                           ; project3Top         ; work         ;
 ;    |SW2dec:F1|                            ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|SW2dec:F1                                                                                                 ; SW2dec              ; work         ;
 ;    |keypressed:U1|                        ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|keypressed:U1                                                                                             ; keypressed          ; work         ;
 ;    |keypressed:U2|                        ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|keypressed:U2                                                                                             ; keypressed          ; work         ;
-;    |newton:F2|                            ; 964 (23)            ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |project3Top|newton:F2                                                                                                 ; newton              ; work         ;
-;       |lpm_divide:Div1|                   ; 230 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_0dm:auto_generated|  ; 230 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div1|lpm_divide_0dm:auto_generated                                                   ; lpm_divide_0dm      ; work         ;
-;             |sign_div_unsign_6nh:divider| ; 230 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div1|lpm_divide_0dm:auto_generated|sign_div_unsign_6nh:divider                       ; sign_div_unsign_6nh ; work         ;
-;                |alt_u_div_i2f:divider|    ; 230 (230)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div1|lpm_divide_0dm:auto_generated|sign_div_unsign_6nh:divider|alt_u_div_i2f:divider ; alt_u_div_i2f       ; work         ;
-;       |lpm_divide:Div2|                   ; 272 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div2                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_scm:auto_generated|  ; 272 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div2|lpm_divide_scm:auto_generated                                                   ; lpm_divide_scm      ; work         ;
-;             |sign_div_unsign_2nh:divider| ; 272 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div2|lpm_divide_scm:auto_generated|sign_div_unsign_2nh:divider                       ; sign_div_unsign_2nh ; work         ;
-;                |alt_u_div_a2f:divider|    ; 272 (272)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div2|lpm_divide_scm:auto_generated|sign_div_unsign_2nh:divider|alt_u_div_a2f:divider ; alt_u_div_a2f       ; work         ;
-;       |lpm_divide:Div3|                   ; 254 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div3                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_ibm:auto_generated|  ; 254 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div3|lpm_divide_ibm:auto_generated                                                   ; lpm_divide_ibm      ; work         ;
-;             |sign_div_unsign_olh:divider| ; 254 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div3|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
-;                |alt_u_div_mve:divider|    ; 254 (254)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div3|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_mve:divider ; alt_u_div_mve       ; work         ;
-;       |lpm_divide:Div4|                   ; 185 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div4                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_fbm:auto_generated|  ; 185 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div4|lpm_divide_fbm:auto_generated                                                   ; lpm_divide_fbm      ; work         ;
-;             |sign_div_unsign_llh:divider| ; 185 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div4|lpm_divide_fbm:auto_generated|sign_div_unsign_llh:divider                       ; sign_div_unsign_llh ; work         ;
-;                |alt_u_div_gve:divider|    ; 185 (185)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div4|lpm_divide_fbm:auto_generated|sign_div_unsign_llh:divider|alt_u_div_gve:divider ; alt_u_div_gve       ; work         ;
+;    |newton:F2|                            ; 2688 (363)          ; 0 (0)                     ; 0                 ; 7          ; 0    ; 0            ; |project3Top|newton:F2                                                                                                 ; newton              ; work         ;
+;       |lpm_divide:Div0|                   ; 294 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_6dm:auto_generated|  ; 294 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div0|lpm_divide_6dm:auto_generated                                                   ; lpm_divide_6dm      ; work         ;
+;             |sign_div_unsign_cnh:divider| ; 294 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div0|lpm_divide_6dm:auto_generated|sign_div_unsign_cnh:divider                       ; sign_div_unsign_cnh ; work         ;
+;                |alt_u_div_u2f:divider|    ; 294 (294)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div0|lpm_divide_6dm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_u2f:divider ; alt_u_div_u2f       ; work         ;
+;       |lpm_divide:Div1|                   ; 648 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_4dm:auto_generated|  ; 648 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div1|lpm_divide_4dm:auto_generated                                                   ; lpm_divide_4dm      ; work         ;
+;             |sign_div_unsign_anh:divider| ; 648 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div1|lpm_divide_4dm:auto_generated|sign_div_unsign_anh:divider                       ; sign_div_unsign_anh ; work         ;
+;                |alt_u_div_p2f:divider|    ; 648 (648)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div1|lpm_divide_4dm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_p2f:divider ; alt_u_div_p2f       ; work         ;
+;       |lpm_divide:Div2|                   ; 584 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div2                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_vcm:auto_generated|  ; 584 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div2|lpm_divide_vcm:auto_generated                                                   ; lpm_divide_vcm      ; work         ;
+;             |sign_div_unsign_5nh:divider| ; 584 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div2|lpm_divide_vcm:auto_generated|sign_div_unsign_5nh:divider                       ; sign_div_unsign_5nh ; work         ;
+;                |alt_u_div_g2f:divider|    ; 584 (584)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div2|lpm_divide_vcm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_g2f:divider ; alt_u_div_g2f       ; work         ;
+;       |lpm_divide:Div3|                   ; 482 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div3                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_lbm:auto_generated|  ; 482 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div3|lpm_divide_lbm:auto_generated                                                   ; lpm_divide_lbm      ; work         ;
+;             |sign_div_unsign_rlh:divider| ; 482 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div3|lpm_divide_lbm:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh ; work         ;
+;                |alt_u_div_sve:divider|    ; 482 (482)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div3|lpm_divide_lbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_sve:divider ; alt_u_div_sve       ; work         ;
+;       |lpm_divide:Div4|                   ; 317 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div4                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_jbm:auto_generated|  ; 317 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div4|lpm_divide_jbm:auto_generated                                                   ; lpm_divide_jbm      ; work         ;
+;             |sign_div_unsign_plh:divider| ; 317 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div4|lpm_divide_jbm:auto_generated|sign_div_unsign_plh:divider                       ; sign_div_unsign_plh ; work         ;
+;                |alt_u_div_nve:divider|    ; 317 (317)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|newton:F2|lpm_divide:Div4|lpm_divide_jbm:auto_generated|sign_div_unsign_plh:divider|alt_u_div_nve:divider ; alt_u_div_nve       ; work         ;
 ;    |seven_seg_driver:S0|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|seven_seg_driver:S0                                                                                       ; seven_seg_driver    ; work         ;
 ;    |seven_seg_driver:S1|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|seven_seg_driver:S1                                                                                       ; seven_seg_driver    ; work         ;
 ;    |seven_seg_driver:S2|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |project3Top|seven_seg_driver:S2                                                                                       ; seven_seg_driver    ; work         ;
@@ -280,10 +289,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                       ; Number Used ;
 +---------------------------------+-------------+
 ; Two Independent 18x18           ; 1           ;
-; Independent 18x18 plus 36       ; 3           ;
-; Total number of DSP blocks      ; 4           ;
+; Independent 18x18 plus 36       ; 5           ;
+; Sum of two 18x18                ; 1           ;
+; Total number of DSP blocks      ; 7           ;
 ;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 4           ;
+; Fixed Point Unsigned Multiplier ; 8           ;
 +---------------------------------+-------------+
 
 
@@ -318,7 +328,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Total registers                              ; 55    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 20    ;
+; Number of registers using Synchronous Load   ; 24    ;
 ; Number of registers using Asynchronous Clear ; 31    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 48    ;
@@ -366,14 +376,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+----------------------------------+
 ; Parameter Name         ; Value          ; Type                             ;
 +------------------------+----------------+----------------------------------+
-; LPM_WIDTHN             ; 20             ; Untyped                          ;
+; LPM_WIDTHN             ; 32             ; Untyped                          ;
 ; LPM_WIDTHD             ; 4              ; Untyped                          ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
 ; LPM_PIPELINE           ; 0              ; Untyped                          ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
-; CBXI_PARAMETER         ; lpm_divide_fbm ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_jbm ; Untyped                          ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
@@ -389,14 +399,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+----------------------------------+
 ; Parameter Name         ; Value          ; Type                             ;
 +------------------------+----------------+----------------------------------+
-; LPM_WIDTHN             ; 20             ; Untyped                          ;
+; LPM_WIDTHN             ; 32             ; Untyped                          ;
 ; LPM_WIDTHD             ; 7              ; Untyped                          ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
 ; LPM_PIPELINE           ; 0              ; Untyped                          ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
-; CBXI_PARAMETER         ; lpm_divide_ibm ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_lbm ; Untyped                          ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
@@ -412,14 +422,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+----------------------------------+
 ; Parameter Name         ; Value          ; Type                             ;
 +------------------------+----------------+----------------------------------+
-; LPM_WIDTHN             ; 20             ; Untyped                          ;
+; LPM_WIDTHN             ; 32             ; Untyped                          ;
 ; LPM_WIDTHD             ; 10             ; Untyped                          ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
 ; LPM_PIPELINE           ; 0              ; Untyped                          ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
-; CBXI_PARAMETER         ; lpm_divide_scm ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_vcm ; Untyped                          ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
@@ -435,14 +445,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+----------------------------------+
 ; Parameter Name         ; Value          ; Type                             ;
 +------------------------+----------------+----------------------------------+
-; LPM_WIDTHN             ; 20             ; Untyped                          ;
+; LPM_WIDTHN             ; 32             ; Untyped                          ;
 ; LPM_WIDTHD             ; 14             ; Untyped                          ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
 ; LPM_PIPELINE           ; 0              ; Untyped                          ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
-; CBXI_PARAMETER         ; lpm_divide_0dm ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_4dm ; Untyped                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                   ;
++------------------------+----------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: newton:F2|lpm_divide:Div0 ;
++------------------------+----------------+----------------------------------+
+; Parameter Name         ; Value          ; Type                             ;
++------------------------+----------------+----------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                          ;
+; LPM_WIDTHD             ; 17             ; Untyped                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_6dm ; Untyped                          ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
@@ -460,31 +493,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 55                          ;
 ;     CLR               ; 7                           ;
-;     ENA               ; 4                           ;
 ;     ENA CLR           ; 24                          ;
-;     ENA SLD           ; 20                          ;
-; arriav_lcell_comb     ; 1071                        ;
-;     arith             ; 474                         ;
-;         0 data inputs ; 90                          ;
-;         1 data inputs ; 45                          ;
-;         2 data inputs ; 17                          ;
-;         3 data inputs ; 205                         ;
-;         4 data inputs ; 117                         ;
-;     normal            ; 538                         ;
-;         1 data inputs ; 25                          ;
-;         2 data inputs ; 267                         ;
-;         3 data inputs ; 126                         ;
-;         4 data inputs ; 112                         ;
+;     ENA SLD           ; 24                          ;
+; arriav_lcell_comb     ; 2791                        ;
+;     arith             ; 1482                        ;
+;         0 data inputs ; 203                         ;
+;         1 data inputs ; 152                         ;
+;         2 data inputs ; 61                          ;
+;         3 data inputs ; 608                         ;
+;         4 data inputs ; 429                         ;
+;         5 data inputs ; 29                          ;
+;     normal            ; 1227                        ;
+;         1 data inputs ; 29                          ;
+;         2 data inputs ; 660                         ;
+;         3 data inputs ; 282                         ;
+;         4 data inputs ; 248                         ;
 ;         5 data inputs ; 4                           ;
 ;         6 data inputs ; 4                           ;
-;     shared            ; 59                          ;
-;         0 data inputs ; 4                           ;
-;         1 data inputs ; 55                          ;
-; arriav_mac            ; 4                           ;
+;     shared            ; 82                          ;
+;         0 data inputs ; 17                          ;
+;         1 data inputs ; 56                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 2                           ;
+; arriav_mac            ; 7                           ;
 ; boundary_port         ; 66                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 25.70                       ;
-; Average LUT depth     ; 19.40                       ;
+; Max LUT depth         ; 80.60                       ;
+; Average LUT depth     ; 52.65                       ;
 +-----------------------+-----------------------------+
 
 
@@ -493,7 +529,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -503,7 +539,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Dec 01 00:54:09 2022
+    Info: Processing started: Thu Dec 01 23:39:37 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project3Top -c project3Top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -518,87 +554,99 @@ Info (12021): Found 1 design units, including 1 entities, in source file keypres
 Info (12021): Found 1 design units, including 1 entities, in source file project3top.v
     Info (12023): Found entity 1: project3Top File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/project3Top.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file run.v
-    Info (12023): Found entity 1: run File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/run.v Line: 3
+    Info (12023): Found entity 1: run File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/run.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file newton.v
     Info (12023): Found entity 1: newton File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 3
 Info (12127): Elaborating entity "project3Top" for the top level hierarchy
 Info (12128): Elaborating entity "SW2dec" for hierarchy "SW2dec:F1" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/project3Top.v Line: 24
 Warning (10230): Verilog HDL assignment warning at SW2dec.v(23): truncated value with size 32 to match size of target (10) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/SW2dec.v Line: 23
 Info (12128): Elaborating entity "newton" for hierarchy "newton:F2" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/project3Top.v Line: 27
-Warning (10036): Verilog HDL or VHDL warning at newton.v(7): object "in_Val" assigned a value but never read File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 7
-Warning (10230): Verilog HDL assignment warning at newton.v(21): truncated value with size 20 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 21
-Warning (10230): Verilog HDL assignment warning at newton.v(23): truncated value with size 20 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 23
-Warning (10230): Verilog HDL assignment warning at newton.v(25): truncated value with size 20 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 25
-Warning (10230): Verilog HDL assignment warning at newton.v(28): truncated value with size 20 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 28
-Warning (10230): Verilog HDL assignment warning at newton.v(32): truncated value with size 20 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 32
-Warning (10230): Verilog HDL assignment warning at newton.v(37): truncated value with size 20 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 37
+Warning (10230): Verilog HDL assignment warning at newton.v(21): truncated value with size 32 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 21
+Warning (10230): Verilog HDL assignment warning at newton.v(23): truncated value with size 32 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 23
+Warning (10230): Verilog HDL assignment warning at newton.v(25): truncated value with size 32 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 25
+Warning (10230): Verilog HDL assignment warning at newton.v(28): truncated value with size 32 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 28
+Warning (10230): Verilog HDL assignment warning at newton.v(32): truncated value with size 32 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 32
+Warning (10230): Verilog HDL assignment warning at newton.v(37): truncated value with size 32 to match size of target (4) File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 37
 Info (12128): Elaborating entity "seven_seg_driver" for hierarchy "seven_seg_driver:S0" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/project3Top.v Line: 34
 Info (12128): Elaborating entity "keypressed" for hierarchy "keypressed:U1" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/project3Top.v Line: 44
-Info (278001): Inferred 4 megafunctions from design logic
+Info (278001): Inferred 5 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "newton:F2|Div4" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 32
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "newton:F2|Div3" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 28
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "newton:F2|Div2" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 25
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "newton:F2|Div1" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 23
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "newton:F2|Div0" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 21
 Info (12130): Elaborated megafunction instantiation "newton:F2|lpm_divide:Div4" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 32
 Info (12133): Instantiated megafunction "newton:F2|lpm_divide:Div4" with the following parameter: File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 32
-    Info (12134): Parameter "LPM_WIDTHN" = "20"
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_fbm.tdf
-    Info (12023): Found entity 1: lpm_divide_fbm File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_fbm.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_llh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_llh File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_llh.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_gve.tdf
-    Info (12023): Found entity 1: alt_u_div_gve File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_gve.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_jbm.tdf
+    Info (12023): Found entity 1: lpm_divide_jbm File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_jbm.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_plh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_plh File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_plh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_nve.tdf
+    Info (12023): Found entity 1: alt_u_div_nve File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_nve.tdf Line: 22
 Info (12130): Elaborated megafunction instantiation "newton:F2|lpm_divide:Div3" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 28
 Info (12133): Instantiated megafunction "newton:F2|lpm_divide:Div3" with the following parameter: File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 28
-    Info (12134): Parameter "LPM_WIDTHN" = "20"
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ibm.tdf
-    Info (12023): Found entity 1: lpm_divide_ibm File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_ibm.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_olh File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_olh.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_mve.tdf
-    Info (12023): Found entity 1: alt_u_div_mve File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_mve.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_lbm.tdf
+    Info (12023): Found entity 1: lpm_divide_lbm File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_lbm.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_rlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_rlh File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_rlh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_sve.tdf
+    Info (12023): Found entity 1: alt_u_div_sve File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_sve.tdf Line: 22
 Info (12130): Elaborated megafunction instantiation "newton:F2|lpm_divide:Div2" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 25
 Info (12133): Instantiated megafunction "newton:F2|lpm_divide:Div2" with the following parameter: File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 25
-    Info (12134): Parameter "LPM_WIDTHN" = "20"
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_scm.tdf
-    Info (12023): Found entity 1: lpm_divide_scm File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_scm.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_2nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_2nh File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_2nh.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_a2f.tdf
-    Info (12023): Found entity 1: alt_u_div_a2f File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_a2f.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_vcm.tdf
+    Info (12023): Found entity 1: lpm_divide_vcm File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_vcm.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_5nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_5nh File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_5nh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_g2f.tdf
+    Info (12023): Found entity 1: alt_u_div_g2f File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_g2f.tdf Line: 22
 Info (12130): Elaborated megafunction instantiation "newton:F2|lpm_divide:Div1" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 23
 Info (12133): Instantiated megafunction "newton:F2|lpm_divide:Div1" with the following parameter: File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 23
-    Info (12134): Parameter "LPM_WIDTHN" = "20"
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "14"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_0dm.tdf
-    Info (12023): Found entity 1: lpm_divide_0dm File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_0dm.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_6nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_6nh File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_6nh.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_i2f.tdf
-    Info (12023): Found entity 1: alt_u_div_i2f File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_i2f.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_4dm.tdf
+    Info (12023): Found entity 1: lpm_divide_4dm File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_4dm.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_anh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_anh File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_anh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_p2f.tdf
+    Info (12023): Found entity 1: alt_u_div_p2f File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_p2f.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "newton:F2|lpm_divide:Div0" File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 21
+Info (12133): Instantiated megafunction "newton:F2|lpm_divide:Div0" with the following parameter: File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/newton.v Line: 21
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "17"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_6dm.tdf
+    Info (12023): Found entity 1: lpm_divide_6dm File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/lpm_divide_6dm.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_cnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_cnh File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/sign_div_unsign_cnh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_u2f.tdf
+    Info (12023): Found entity 1: alt_u_div_u2f File: C:/Users/liupp/Desktop/DATA/ECE/ECE3544-2022-fall/lab5/square-root-finder/project3Top_zx_restored/db/alt_u_div_u2f.tdf Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1153 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2880 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 1083 logic cells
-    Info (21062): Implemented 4 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4901 megabytes
-    Info: Processing ended: Thu Dec 01 00:54:18 2022
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:18
+    Info (21061): Implemented 2807 logic cells
+    Info (21062): Implemented 7 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4945 megabytes
+    Info: Processing ended: Thu Dec 01 23:39:49 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:21
 
 

@@ -1,29 +1,24 @@
 
+module run(num, root);
 
-module run(valIn, initValue);
-   input [19:0] valIn;
-   
-   reg [19:0] zone;
-   output [19:0]initValue;
-   reg [19:0]initValue;
-   //wire [18:0] num;
-   integer n;
-   
-   always@(valIn or zone) begin
-		n = 0;
-		zone = 20'd9;
-		while(valIn>0) begin
-			if(valIn < zone) begin
-				initValue = 2**(n+1);
-				break;
-		
-			end
-			else begin
-	        zone = zone<<2;
-	        n = n + 1;
-			end
-		end   
-   end
+input[19:0] num;
+output reg [19:0] root;
 
+reg rt;
+integer temp;
+
+reg [19:0] i;
+
+	always @(*) begin
+		root = 20'd0;
+		rt = 0;
+		for(i = 0;i<(num/2);i = i+1) begin
+			temp = i * i;
+			if(temp == num) begin
+			rt = 1;
+			root = i;
+			end
+		end
+	end
 
 endmodule
